@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import React from 'react'
 import Title from './Title'
 import Button from './Button'
 
 export default function About() {
     return (
-        <section className='flex container justify-between items-center mt-[230px]'>
+        <section className='flex container justify-between items-center my-[230px]'>
             <div className='before:content-[""] max-w-max relative before:z-[-1] before:rounded-t-[40%] before:rounded-b-3xl before:absolute before:bottom-[-1px] before:bg-[#39db4a] before:w-[400px] before:h-[350px] before:left-1/2 before:-translate-x-1/2'>
                 <Image src="/cartoon.png" style={{transform:"rotateY(180deg)"}} alt='cartoon' width={ 600 } height={ 600 } />
             </div>

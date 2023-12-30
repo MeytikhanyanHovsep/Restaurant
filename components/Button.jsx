@@ -2,6 +2,6 @@ import Link from 'next/link'
 
 export default function Button({children,url}) {
     return (
-        <Link href={url} className='flex bg-[#39db4a] items-center text-white text-[22px] gap-[15px] px-[32px] py-[18px] rounded-[40px]'>{children}</Link>
+        <Link href={url} className='flex bg-[#39db4a] drop-shadow-[8px_8px_5px_#00000020] items-center text-white text-[22px] gap-[15px] px-[32px] py-[18px] rounded-[40px]'>{children}</Link>
     )
 }
