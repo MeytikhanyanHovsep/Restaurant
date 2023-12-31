@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './Footer'
 
-export default function Componetns({children}) {
+export default function Componetns({ children }) {
     return <>
-    <Header />
-        {children}
+        <Header />
+        { children }
+        <Footer />
     </>
 }
