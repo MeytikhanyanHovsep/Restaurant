@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import Button from '../Button'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -20,7 +20,7 @@ export default function Main() {
                 </div>
             </div>
             <div className='before:content-[""] relative before:z-[-1] before:rounded-full before:absolute before:top-1/2 before:bg-[#39db4a] before:w-[450px] before:h-[450px] before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2'>
-                <Image src="/cook.png" style={{transform:"rotateY(180deg)"}} alt='' width={ 700 } height={ 700 } />
+                <Image src="/cook.png" style={{transform:"rotateY(180deg)"}} alt='cook' width={ 700 } height={ 700 } />
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './Button'
-import Title from './Title'
+import Button from '../Button'
+import Title from '../Title'
 import Image from 'next/image'
 
 export default function Services() {
@@ -10,6 +10,7 @@ export default function Services() {
         "Online Ordering": "Explore menu & order with ease using our Online Ordering ",
         "Gift Cards": "Give the gift of exceptional dining with Foodi Gift Cards",
     }
+
     return (
         <section className='flex container justify-between items-center'>
             <div className='flex flex-col items-start max-w-[600px]'>
@@ -19,7 +20,7 @@ export default function Services() {
             </div>
             <div className='grid grid-cols-2 gap-[35px] max-w-[600px]'>
                 { Object.keys(services).map((e, i) => <div key={ i } className='flex shadow-[7px_12px_43px_#00000015] bg-white px-[25px] font-[600] py-[40px] items-center rounded-[30px] flex-col'>
-                    <Image src={ "/" + e.toLowerCase()+".png" } width={65} height={65} />
+                    <Image src={ "/" + e.toLowerCase()+".png" } width={65} height={65} alt='' />
                     <h5 className='text-[#5fe26c] mt-[25px] mb-[15px] text-[24px] font-[600]'>{ e }</h5>
                     <p className='text-[#90bd95] text-[20px] text-center'>{ services[e] }</p>
                 </div>) }
